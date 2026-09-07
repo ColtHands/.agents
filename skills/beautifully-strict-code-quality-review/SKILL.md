@@ -4,7 +4,7 @@ description: Run an extremely strict maintainability review for abstraction qual
 disable-model-invocation: true
 ---
 
-# Thermo-Nuclear Code Quality Review
+# Beautifully Strict Code Quality Review
 
 Use this skill for a strict review focused on implementation quality, maintainability, abstraction quality, and codebase health.
 
