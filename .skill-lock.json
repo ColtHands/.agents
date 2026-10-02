@@ -45,6 +45,95 @@
       "skillFolderHash": "a0129025295909bd28ef7468a5b88a5ec9f1724a",
       "installedAt": "2026-08-20T21:04:43.360Z",
       "updatedAt": "2026-08-20T21:04:43.360Z"
+    },
+    "codebase-design": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "skillPath": "skills/engineering/codebase-design/SKILL.md",
+      "skillFolderHash": "344e3efc88ee60663b2e989555c2efdb548fbd42",
+      "pluginName": "mattpocock-skills",
+      "installedAt": "2026-08-26T19:43:33.145Z",
+      "updatedAt": "2026-08-26T19:43:33.145Z"
+    },
+    "code-review": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "skillPath": "skills/engineering/code-review/SKILL.md",
+      "skillFolderHash": "d8e341cee7980127dddda05159bedf25dc853615",
+      "pluginName": "mattpocock-skills",
+      "installedAt": "2026-08-26T19:43:33.147Z",
+      "updatedAt": "2026-08-26T19:43:33.147Z"
+    },
+    "legal-risk-assessment": {
+      "source": "anthropics/knowledge-work-plugins",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/anthropics/knowledge-work-plugins.git",
+      "skillPath": "legal/skills/legal-risk-assessment/SKILL.md",
+      "skillFolderHash": "e028c762f13c481820d076f1e8b8b143e4ab4e0e",
+      "installedAt": "2026-08-31T09:07:23.106Z",
+      "updatedAt": "2026-08-31T09:07:23.106Z"
+    },
+    "grill-me": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "skillPath": "skills/productivity/grill-me/SKILL.md",
+      "skillFolderHash": "3df14e2d3a89459bf300614be9247e3ce74798f8",
+      "pluginName": "mattpocock-skills",
+      "installedAt": "2026-09-03T08:23:50.777Z",
+      "updatedAt": "2026-09-03T08:23:50.777Z"
+    },
+    "grill-with-docs": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "skillPath": "skills/engineering/grill-with-docs/SKILL.md",
+      "skillFolderHash": "eedaf2562c83155115e9c649fa3ecaac2e10e81d",
+      "pluginName": "mattpocock-skills",
+      "installedAt": "2026-09-03T08:23:50.779Z",
+      "updatedAt": "2026-09-03T08:23:50.779Z"
+    },
+    "grilling": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "skillPath": "skills/productivity/grilling/SKILL.md",
+      "skillFolderHash": "f0732035b8b1b60ae39454e4191caef32fa91903",
+      "pluginName": "mattpocock-skills",
+      "installedAt": "2026-09-03T08:23:50.780Z",
+      "updatedAt": "2026-09-03T08:23:50.780Z"
+    },
+    "handoff": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "skillPath": "skills/productivity/handoff/SKILL.md",
+      "skillFolderHash": "2242e8f05424b8c2ae94194a90d97b88d16108ec",
+      "pluginName": "mattpocock-skills",
+      "installedAt": "2026-09-03T08:23:50.781Z",
+      "updatedAt": "2026-09-03T08:23:50.781Z"
+    },
+    "wayfinder": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "skillPath": "skills/engineering/wayfinder/SKILL.md",
+      "skillFolderHash": "8ec0462658381bd1606d3f9db14ffc67df6a2a43",
+      "pluginName": "mattpocock-skills",
+      "installedAt": "2026-09-03T08:23:50.781Z",
+      "updatedAt": "2026-09-03T08:23:50.781Z"
+    },
+    "retro": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/mattpocock/skills.git",
+      "skillPath": "skills/engineering/retro/SKILL.md",
+      "skillFolderHash": "335c1862a43da9d629abafdb79ca0c0de118be08",
+      "pluginName": "mattpocock-skills",
+      "installedAt": "2026-10-01T19:34:09.182Z",
+      "updatedAt": "2026-10-01T19:34:09.182Z"
     }
   },
   "dismissed": {
@@ -52,14 +141,13 @@
   },
   "lastSelectedAgents": [
     "amp",
-    "antigravity",
-    "antigravity-cli",
     "cline",
     "codex",
     "cursor",
-    "deepagents",
+    "droid",
     "gemini-cli",
     "github-copilot",
+    "kilo",
     "kimi-code-cli",
     "opencode",
     "warp",

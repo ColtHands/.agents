@@ -1,12 +1,10 @@
 ---
-name: beautifully-strict-code-quality-review
-description: Run an extremely strict maintainability review for abstraction quality, giant files, and spaghetti-condition growth. Use for a thermo-nuclear code quality review, thermonuclear review, deep code quality audit, or especially harsh maintainability review.
-disable-model-invocation: true
+name: strict-code-review
+description: "Run an extremely strict maintainability review of any provided change for abstraction quality, giant files, and spaghetti growth."
+disable-model-invocation: false
 ---
 
-# Beautifully Strict Code Quality Review
-
-Use this skill for a strict review focused on implementation quality, maintainability, abstraction quality, and codebase health.
+Strict code review focused on implementation quality, maintainability, abstraction quality, and codebase health.
 
 Above all, this skill should push the reviewer to be **ambitious** about code structure. Do not merely identify local cleanup opportunities. Actively search for "code judo" moves: restructurings that preserve behavior while making the implementation dramatically simpler, smaller, more direct, and more elegant.
 
@@ -31,7 +29,7 @@ Apply the baseline prompt above, plus these explicit review rules:
    - Assume there is often a "code judo" move available: a re-organization that uses the existing architecture more effectively and makes the change dramatically simpler and more elegant.
    - If you see a path to delete complexity rather than rearrange it, push hard for that path.
 
-1. **Do not let a PR push a file from under 1k lines to over 1k lines without a very strong reason.**
+1. **Do not let a change push a file from under 1k lines to over 1k lines without a very strong reason.**
    - Treat this as a strong code-quality smell by default.
    - Prefer extracting helpers, subcomponents, modules, or local abstractions instead of letting a file sprawl past 1000 lines.
    - If the diff crosses that threshold, explicitly ask whether the code should be decomposed first.
@@ -92,7 +90,7 @@ Escalate findings when you see:
 
 - A complicated implementation where a cleaner reframing could delete whole categories of complexity.
 - Refactors that move code around but fail to reduce the number of concepts a reader must hold in their head.
-- A file crossing 1000 lines due to the PR, especially if the new code could be split out.
+- A file crossing 1000 lines due to the change, especially if the new code could be split out.
 - New conditionals bolted onto unrelated code paths.
 - One-off booleans, nullable modes, or flags that complicate existing control flow.
 - Feature-specific logic leaking into general-purpose modules.
@@ -182,11 +180,11 @@ The bar for approval is:
 
 Treat these as presumptive blockers unless the author can justify them clearly:
 
-- the PR preserves a lot of incidental complexity when there is a plausible code-judo move that would delete it
-- the PR pushes a file from below 1000 lines to above 1000 lines
-- the PR adds ad-hoc branching that makes an existing flow more tangled
-- the PR solves a local problem by scattering feature checks across shared code
-- the PR adds an unnecessary abstraction, wrapper, or cast-heavy contract that makes the design more indirect
-- the PR duplicates an existing helper or puts logic in the wrong layer when there is a clear canonical home
+- the change preserves a lot of incidental complexity when there is a plausible code-judo move that would delete it
+- the change pushes a file from below 1000 lines to above 1000 lines
+- the change adds ad-hoc branching that makes an existing flow more tangled
+- the change solves a local problem by scattering feature checks across shared code
+- the change adds an unnecessary abstraction, wrapper, or cast-heavy contract that makes the design more indirect
+- the change duplicates an existing helper or puts logic in the wrong layer when there is a clear canonical home
 
 If those conditions are not met, leave explicit, actionable feedback and push for a cleaner decomposition.

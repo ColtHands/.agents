@@ -1,0 +1,4 @@
+interface:
+  display_name: "Refactorer"
+  short_description: "Rigorous TypeScript design and verified refactoring"
+  default_prompt: "Use $refactorer to simplify this TypeScript code while preserving behavior and verifying the result."
