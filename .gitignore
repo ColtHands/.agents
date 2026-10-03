@@ -1,13 +1,27 @@
-node_modules/
-.pnpm-store/
 .DS_Store
 .env
 .env.*
 !.env.example
-.skill-lock.json.tmp
-.agents/skills/
-.machine-backups/
+/.machine-backups/
+/node_modules/
+/apm_modules/
+/.pnpm-store/
+/build/
 
-
-# APM dependencies
+# Installed skills and APM output. Editable sources live in .apm/skills/.
+/skills/
+/.skill-lock.json
+/.skill-lock.json.tmp
+/.agents/skills/
+/.claude/
+/.codex/
+/.cursor/
+/.gemini/
+/.github/hooks/
+/.github/plugin/
+/.grok/
+/.kiro/
+/.opencode/
+/.vscode/
+/.windsurf/
 apm_modules/

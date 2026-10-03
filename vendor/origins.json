@@ -1,0 +1,107 @@
+{
+  "find-skills": {
+    "source": "vercel-labs/skills",
+    "sourceType": "github",
+    "sourceUrl": "https://github.com/vercel-labs/skills.git",
+    "skillPath": "skills/find-skills/SKILL.md",
+    "skillFolderHash": "76a98a285cb0434f3d39e1a873823556330e398b"
+  },
+  "web-quality-audit": {
+    "source": "addyosmani/web-quality-skills",
+    "sourceType": "github",
+    "sourceUrl": "https://github.com/addyosmani/web-quality-skills.git",
+    "skillPath": "skills/web-quality-audit/SKILL.md",
+    "skillFolderHash": "a04a8ccbc301e12a7a4680886981db4955ebafbb"
+  },
+  "landing-page-conversion-audit": {
+    "source": "autonnel/autonnel-skills",
+    "sourceType": "github",
+    "sourceUrl": "https://github.com/autonnel/autonnel-skills.git",
+    "skillPath": "landing-page-conversion-audit/SKILL.md",
+    "skillFolderHash": "45edf8a99b24f11b1d4121ed577e07af85af0512"
+  },
+  "security-audit": {
+    "source": "cloudflare/security-audit-skill",
+    "sourceType": "github",
+    "sourceUrl": "https://github.com/cloudflare/security-audit-skill.git",
+    "skillPath": "skills/security-audit/SKILL.md",
+    "skillFolderHash": "ccbc33ed119b28c3ef7b44a7e2081ab191ad63af"
+  },
+  "seo-audit": {
+    "source": "anthropics/knowledge-work-plugins",
+    "sourceType": "github",
+    "sourceUrl": "https://github.com/anthropics/knowledge-work-plugins.git",
+    "skillPath": "marketing/skills/seo-audit/SKILL.md",
+    "skillFolderHash": "a0129025295909bd28ef7468a5b88a5ec9f1724a"
+  },
+  "codebase-design": {
+    "source": "mattpocock/skills",
+    "sourceType": "github",
+    "sourceUrl": "https://github.com/mattpocock/skills.git",
+    "skillPath": "skills/engineering/codebase-design/SKILL.md",
+    "skillFolderHash": "07ba1cd60efc12d0d3a083005c1d9651cf15e39a"
+  },
+  "code-review": {
+    "source": "mattpocock/skills",
+    "sourceType": "github",
+    "sourceUrl": "https://github.com/mattpocock/skills.git",
+    "skillPath": "skills/engineering/code-review/SKILL.md",
+    "skillFolderHash": "d8e341cee7980127dddda05159bedf25dc853615"
+  },
+  "legal-risk-assessment": {
+    "source": "anthropics/knowledge-work-plugins",
+    "sourceType": "github",
+    "sourceUrl": "https://github.com/anthropics/knowledge-work-plugins.git",
+    "skillPath": "legal/skills/legal-risk-assessment/SKILL.md",
+    "skillFolderHash": "e028c762f13c481820d076f1e8b8b143e4ab4e0e"
+  },
+  "grill-me": {
+    "source": "mattpocock/skills",
+    "sourceType": "github",
+    "sourceUrl": "https://github.com/mattpocock/skills.git",
+    "skillPath": "skills/productivity/grill-me/SKILL.md",
+    "skillFolderHash": "3df14e2d3a89459bf300614be9247e3ce74798f8"
+  },
+  "grill-with-docs": {
+    "source": "mattpocock/skills",
+    "sourceType": "github",
+    "sourceUrl": "https://github.com/mattpocock/skills.git",
+    "skillPath": "skills/engineering/grill-with-docs/SKILL.md",
+    "skillFolderHash": "eedaf2562c83155115e9c649fa3ecaac2e10e81d"
+  },
+  "grilling": {
+    "source": "mattpocock/skills",
+    "sourceType": "github",
+    "sourceUrl": "https://github.com/mattpocock/skills.git",
+    "skillPath": "skills/productivity/grilling/SKILL.md",
+    "skillFolderHash": "f0732035b8b1b60ae39454e4191caef32fa91903"
+  },
+  "handoff": {
+    "source": "mattpocock/skills",
+    "sourceType": "github",
+    "sourceUrl": "https://github.com/mattpocock/skills.git",
+    "skillPath": "skills/productivity/handoff/SKILL.md",
+    "skillFolderHash": "2242e8f05424b8c2ae94194a90d97b88d16108ec"
+  },
+  "wayfinder": {
+    "source": "mattpocock/skills",
+    "sourceType": "github",
+    "sourceUrl": "https://github.com/mattpocock/skills.git",
+    "skillPath": "skills/engineering/wayfinder/SKILL.md",
+    "skillFolderHash": "8ec0462658381bd1606d3f9db14ffc67df6a2a43"
+  },
+  "retro": {
+    "source": "mattpocock/skills",
+    "sourceType": "github",
+    "sourceUrl": "https://github.com/mattpocock/skills.git",
+    "skillPath": "skills/engineering/retro/SKILL.md",
+    "skillFolderHash": "335c1862a43da9d629abafdb79ca0c0de118be08"
+  },
+  "ponytail": {
+    "source": "dietrichgebert/ponytail",
+    "sourceType": "github",
+    "sourceUrl": "https://github.com/dietrichgebert/ponytail.git",
+    "skillPath": "skills/ponytail/SKILL.md",
+    "skillFolderHash": "cb6e53477eaf04e6daeca22feacb85f9ce20d40c"
+  }
+}
