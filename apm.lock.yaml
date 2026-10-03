@@ -645,6 +645,13 @@ dependencies:
     .github/hooks/scripts/ponytail/hooks/ponytail-statusline.sh: sha256:f1dbfa5997a5d4b5339619709053eff557ab16d71af75eb3041c3d3e3dca42ec
     .github/hooks/scripts/ponytail/hooks/ponytail-subagent.js: sha256:7f6bee86702a488d29ef0dcaabf424bbe2aca345a6a642319d43a1fe0276792e
   content_hash: sha256:71f96c355b8467f57eeec64a9917a44e261bd1d052ecf426e32fb0d446d51b33
+- repo_url: humanlayer/skills
+  name: 2a785997901e3b4a
+  host: github.com
+  resolved_commit: ca7c8088db69e315a8b2deea43820270457f8f3c
+  version: ca7c808
+  package_type: apm_package
+  content_hash: sha256:7e4b77fa1d6abc00cb3cf787b4eaa88ad41a9f984e988231fcfbcb1c894547f1
 - repo_url: mattpocock/skills
   name: code-review
   host: github.com
