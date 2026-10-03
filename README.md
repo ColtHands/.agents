@@ -1,76 +1,81 @@
-# Personal agent skills and plugins
+# vibe-lib
 
+My editable skills and pinned skill, plugin, and agent dependencies. `apm.yml` is the installation list; `apm.lock.yaml` records resolved versions and content hashes.
 
-1. `brew install apm`
-2. `git clone https://github.com/ColtHands/.agents.git ~/.agents`
-3. `cd ~/.agents`
-4. `apm install --frozen`
-5. `apm install --global "$PWD" --target codex,claude,copilot --force`
+## Install this checkout
 
+Clone this repository to `~/vibe-lib`, outside the global `~/.agents` installation directory:
 
-APM keeps user-scope installation state under `~/.apm/`. That is a consumer of this repository, just like any other project. Rerun the global command after editing personal skills or changing dependencies. `--global` supports different components for different agents; check [APM's target matrix](https://microsoft.github.io/apm/reference/targets-matrix/).
+```sh
+brew install apm
+cd ~/vibe-lib
+apm install --frozen
+```
 
-When migrating from the Vercel skills CLI, existing `~/.claude/skills/<name>` symlinks may conflict with APM: APM rejects symlink destinations. Preserve those links in a backup before replacing them. The existing global skill copies and links were left intact during this repository migration.
+Root `skills/` contains editable source files. APM installs dependencies and personal skills into the selected agents' project directories. Generated directories such as `.agents/skills/`, `.claude/`, `.codex/`, and `apm_modules/` are ignored by Git.
+
+To install the collection globally, run from this checkout:
+
+```sh
+apm install --global "$PWD" --target codex,claude,copilot
+```
+
+APM keeps global installation metadata under `~/.apm/`. Rerun the global command after editing skills or dependencies. Existing symlink destinations from another installer must be backed up and replaced before APM can use them.
 
 ## Install into another repository
 
-From that repository, install the local collection using native APM commands:
+From the consuming repository:
 
 ```sh
-apm install "$HOME/.agents" --target codex,claude
+apm install "$HOME/vibe-lib" --target codex,claude
 ```
 
-After this setup is committed and pushed, it can also be installed directly from Git:
+After committing and pushing, install a pinned revision from the current GitHub origin:
 
 ```sh
-apm install ColtHands/.agents --target codex,claude
+apm install ColtHands/.agents#<commit> --target codex,claude
 ```
 
-APM adds the collection to the consuming project's manifest and creates its lockfile. Commit both. Later restores use `apm install --frozen`. Pin the collection itself with `ColtHands/.agents#<commit>` when you also want to fix the version of personal skills. Upstream dependencies are already pinned in this collection's manifest because consumers resolve its dependency declarations rather than inheriting its lockfile.
+The GitHub repository still uses its original name. Change this reference to `ColtHands/vibe-lib#<commit>` after renaming the upstream repository.
 
-## Maintain dependencies and personal skills
+Commit the consuming project's manifest and lockfile, then restore with `apm install --frozen`. The collection's manifest pins upstream commits because consumers resolve its dependency declarations rather than inheriting its lockfile.
 
-Add a dependency with APM; prefer an immutable commit or release ref:
+## Edit personal skills
+
+Create or edit `skills/<name>/SKILL.md`, keeping its `agents/`, `references/`, `scripts/`, and other supporting files alongside it. Match the folder name to the skill's `name` field. Preserve all supporting files when editing or moving a skill.
+
+Register a new source skill for installation in this checkout:
 
 ```sh
-apm install owner/repo/path/to/skill#<commit-or-tag>
-apm install owner/plugin-repo#<commit-or-tag>
+apm install --dev ./skills/my-skill
 ```
 
-To upgrade a commit-pinned dependency, change its ref in `apm.yml`, then run `apm install`. `apm update` cannot move an immutable commit pin. For packages deliberately following a tag, branch, or version range, use `apm update`. Review and commit the manifest and generated lockfile together. `apm lock` resolves dependencies without deploying files.
+These local `devDependencies` deploy authored skills when working in this repository. Consumers discover the root `skills/` collection directly, without inheriting the authoring dependencies. After editing, run `apm install` and reinstall the collection in any consumer that needs the changes. Commit source files and any manifest or lockfile changes. Edit source skills rather than generated copies.
 
-Create or edit personal skills at `.apm/skills/<name>/SKILL.md`, with any `agents/`, `references/`, or `scripts/` alongside it. Run `apm install` to deploy them, then reinstall the collection in any other consumer that needs the changes. Edit these source files rather than installed copies under `skills/` or `.agents/skills/`.
+## Manage dependencies
 
-Verify an installed checkout with:
+Add third-party skills or plugins with immutable refs:
+
+```sh
+apm install owner/repo/path/to/skill#<commit>
+apm install owner/plugin-repo#<commit>
+```
+
+To upgrade a commit pin, change its ref in `apm.yml`, then run `apm install`. `apm update` applies to dependencies following mutable refs. Review and commit the manifest and generated lockfile together; never hand-edit the lockfile.
+
+Verify changes with:
 
 ```sh
 apm install --frozen
 apm audit --ci --no-policy
 ```
 
-## Native plugins
-
-APM installs the portable skills and supported components from plugin packages. A native host's plugin registration, UI settings, and service authentication have their own lifecycle. For Ponytail's native plugin, the catalogs in this repo pin the same commit as `apm.yml`; keep those pins aligned when upgrading it.
-
-Register the catalog through the host CLI:
-
-```sh
-codex plugin marketplace add "$HOME/.agents"
-claude plugin marketplace add "$HOME/.agents"
-```
-
-Then select `ponytail@personal-agents` in the host's plugin browser. On a CLI that supports direct native installation, use `codex plugin add ponytail@personal-agents` or `claude plugin install ponytail@personal-agents --scope user`. Keep one active native Ponytail installation per host when switching from its upstream marketplace. Restart the host after catalog or plugin changes.
-
-Store personal plugins under `plugins/<name>/` and add them to the appropriate native catalog. An APM-compatible local plugin can also be declared with `apm install ./plugins/<name>`; its files stay in Git.
-
-Plugins and skills bundled with Codex are supplied by Codex. Connector account access and authentication are not portable Git dependencies.
-
-APM 0.32.0 reports Cursor hook event casing warnings for Ponytail 4.10.1. Skill installation and lockfile integrity pass; Cursor hook execution has not been validated.
+APM deploys portable skills and supported plugin components. Native plugin registration and service authentication are managed separately by each host. Store personal plugins under `plugins/<name>/` and declare them with `apm install ./plugins/<name>`. Keep any native marketplace pins aligned with the corresponding APM dependency.
 
 ## Backup snapshots
 
-`vendor/` preserves the pre-migration third-party skill copies and the Ponytail plugin source. It is a recovery archive, not an additional active dependency declaration, and APM does not update it automatically. Current dependency versions come from `apm.yml` and `apm.lock.yaml`.
+`vendor/` preserves earlier third-party skill copies and the Ponytail plugin source, including their provenance. It is a recovery archive; active dependencies come from the manifest and lockfile. Preserve its contents, licenses, and attribution.
 
-If an upstream disappears, replace that dependency entry with its local backup path, then run `apm install`. Skill backups have `SKILL.md`; the Ponytail backup contains its package manifest and plugin sources. Preserve upstream licenses and attribution when distributing these snapshots.
+If an upstream disappears, replace its dependency entry with the local backup path and run `apm install`.
 
-References: [APM dependency and lockfile workflow](https://microsoft.github.io/apm/consumer/manage-dependencies/), [Codex skill locations](https://learn.chatgpt.com/docs/build-skills), [OpenAI native plugin marketplaces](https://developers.openai.com/plugins/build/plugins).
+References: [APM dependency workflow](https://microsoft.github.io/apm/consumer/manage-dependencies/), [APM package layouts](https://microsoft.github.io/apm/reference/package-types/).

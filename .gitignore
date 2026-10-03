@@ -2,17 +2,10 @@
 .env
 .env.*
 !.env.example
-/.machine-backups/
 /node_modules/
-/apm_modules/
 /.pnpm-store/
 /build/
 
-# Installed skills and APM output. Editable sources live in .apm/skills/.
-/skills/
-/.skill-lock.json
-/.skill-lock.json.tmp
-/.agents/skills/
 /.claude/
 /.codex/
 /.cursor/
@@ -22,6 +15,5 @@
 /.grok/
 /.kiro/
 /.opencode/
-/.vscode/
 /.windsurf/
 apm_modules/
