@@ -30,8 +30,8 @@ includes: auto
 devDependencies:
   apm:
     - ./skills/code-review-copy
-    - ./skills/explain-diff
     - ./skills/refactorer
     - ./skills/refactorer-copy
     - ./skills/strict-code-review
-    - ./skills/user-journey-mapping
+    - ./vendor/skills/explain-diff
+    - ./vendor/skills/user-journey-mapping

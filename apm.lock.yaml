@@ -29,7 +29,7 @@ dependencies:
     .agents/skills/explain-diff/SKILL.md: sha256:372b0cc43f45a0765133a3df6ab4b222713b26d96960b2b747fdb18883ee932b
     .claude/skills/explain-diff/SKILL.md: sha256:372b0cc43f45a0765133a3df6ab4b222713b26d96960b2b747fdb18883ee932b
   source: local
-  local_path: ./skills/explain-diff
+  local_path: ./vendor/skills/explain-diff
   is_dev: true
 - repo_url: _local/refactorer
   name: refactorer
@@ -373,7 +373,7 @@ dependencies:
     .claude/skills/user-journey-mapping/SKILL.md: sha256:dee669bf62efdcc044279aef8e99428b87b211da99546bc749303b41f787038b
     .claude/skills/user-journey-mapping/research-methods.md: sha256:b5c584ca84d174b5a0a35f65df1d22b27c0ed2ea20e7f54503f3cf583cb9a318
   source: local
-  local_path: ./skills/user-journey-mapping
+  local_path: ./vendor/skills/user-journey-mapping
   is_dev: true
 - repo_url: addyosmani/web-quality-skills
   name: web-quality-audit
@@ -1272,8 +1272,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - ./skills/explain-diff
-  active_owner: ./skills/explain-diff
+  - ./vendor/skills/explain-diff
+  active_owner: ./vendor/skills/explain-diff
   content_hash: null
 - kind: project-relative
   target: claude
@@ -1281,8 +1281,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - ./skills/explain-diff
-  active_owner: ./skills/explain-diff
+  - ./vendor/skills/explain-diff
+  active_owner: ./vendor/skills/explain-diff
   content_hash: sha256:372b0cc43f45a0765133a3df6ab4b222713b26d96960b2b747fdb18883ee932b
 - kind: project-relative
   target: claude
@@ -3000,8 +3000,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - ./skills/user-journey-mapping
-  active_owner: ./skills/user-journey-mapping
+  - ./vendor/skills/user-journey-mapping
+  active_owner: ./vendor/skills/user-journey-mapping
   content_hash: null
 - kind: project-relative
   target: claude
@@ -3009,8 +3009,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - ./skills/user-journey-mapping
-  active_owner: ./skills/user-journey-mapping
+  - ./vendor/skills/user-journey-mapping
+  active_owner: ./vendor/skills/user-journey-mapping
   content_hash: sha256:dee669bf62efdcc044279aef8e99428b87b211da99546bc749303b41f787038b
 - kind: project-relative
   target: claude
@@ -3018,8 +3018,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - ./skills/user-journey-mapping
-  active_owner: ./skills/user-journey-mapping
+  - ./vendor/skills/user-journey-mapping
+  active_owner: ./vendor/skills/user-journey-mapping
   content_hash: sha256:b5c584ca84d174b5a0a35f65df1d22b27c0ed2ea20e7f54503f3cf583cb9a318
 - kind: project-relative
   target: claude
@@ -3171,8 +3171,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - ./skills/explain-diff
-  active_owner: ./skills/explain-diff
+  - ./vendor/skills/explain-diff
+  active_owner: ./vendor/skills/explain-diff
   content_hash: null
 - kind: project-relative
   target: codex
@@ -3180,8 +3180,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - ./skills/explain-diff
-  active_owner: ./skills/explain-diff
+  - ./vendor/skills/explain-diff
+  active_owner: ./vendor/skills/explain-diff
   content_hash: sha256:372b0cc43f45a0765133a3df6ab4b222713b26d96960b2b747fdb18883ee932b
 - kind: project-relative
   target: codex
@@ -4899,8 +4899,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - ./skills/user-journey-mapping
-  active_owner: ./skills/user-journey-mapping
+  - ./vendor/skills/user-journey-mapping
+  active_owner: ./vendor/skills/user-journey-mapping
   content_hash: null
 - kind: project-relative
   target: codex
@@ -4908,8 +4908,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - ./skills/user-journey-mapping
-  active_owner: ./skills/user-journey-mapping
+  - ./vendor/skills/user-journey-mapping
+  active_owner: ./vendor/skills/user-journey-mapping
   content_hash: sha256:dee669bf62efdcc044279aef8e99428b87b211da99546bc749303b41f787038b
 - kind: project-relative
   target: codex
@@ -4917,8 +4917,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - ./skills/user-journey-mapping
-  active_owner: ./skills/user-journey-mapping
+  - ./vendor/skills/user-journey-mapping
+  active_owner: ./vendor/skills/user-journey-mapping
   content_hash: sha256:b5c584ca84d174b5a0a35f65df1d22b27c0ed2ea20e7f54503f3cf583cb9a318
 - kind: project-relative
   target: codex
