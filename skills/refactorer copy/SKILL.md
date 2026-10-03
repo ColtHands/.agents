@@ -1,5 +1,5 @@
 ---
-name: refactorer
+name: refactorer-copy
 description: Refactor TypeScript code for deeper modules, simpler models, clearer ownership, and less branching while preserving behavior. Use for structural cleanup, module or interface redesign, and ambitious codebase refactoring; honor requests that limit the work to review or planning.
 ---
 

@@ -15,9 +15,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/addyosmani/web-quality-skills.git",
       "skillPath": "skills/web-quality-audit/SKILL.md",
-      "skillFolderHash": "a927159d150e7681018cfb1eebefa8a2c951c5fb",
+      "skillFolderHash": "a04a8ccbc301e12a7a4680886981db4955ebafbb",
       "installedAt": "2026-08-20T21:01:59.207Z",
-      "updatedAt": "2026-08-20T21:02:50.186Z"
+      "updatedAt": "2026-10-02T21:20:00.597Z"
     },
     "landing-page-conversion-audit": {
       "source": "autonnel/autonnel-skills",
@@ -33,9 +33,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/cloudflare/security-audit-skill.git",
       "skillPath": "skills/security-audit/SKILL.md",
-      "skillFolderHash": "bf8273f4614739db4c8535a5ab43f3a471b974b8",
+      "skillFolderHash": "ccbc33ed119b28c3ef7b44a7e2081ab191ad63af",
       "installedAt": "2026-08-20T21:04:27.751Z",
-      "updatedAt": "2026-08-20T21:04:27.751Z"
+      "updatedAt": "2026-10-02T21:20:02.388Z"
     },
     "seo-audit": {
       "source": "anthropics/knowledge-work-plugins",
@@ -51,10 +51,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/mattpocock/skills.git",
       "skillPath": "skills/engineering/codebase-design/SKILL.md",
-      "skillFolderHash": "344e3efc88ee60663b2e989555c2efdb548fbd42",
-      "pluginName": "mattpocock-skills",
+      "skillFolderHash": "07ba1cd60efc12d0d3a083005c1d9651cf15e39a",
       "installedAt": "2026-08-26T19:43:33.145Z",
-      "updatedAt": "2026-08-26T19:43:33.145Z"
+      "updatedAt": "2026-10-02T21:20:04.145Z"
     },
     "code-review": {
       "source": "mattpocock/skills",
@@ -134,6 +133,78 @@
       "pluginName": "mattpocock-skills",
       "installedAt": "2026-10-01T19:34:09.182Z",
       "updatedAt": "2026-10-01T19:34:09.182Z"
+    },
+    "code-review-copy": {
+      "source": "./skills/code-review-copy",
+      "sourceType": "local",
+      "sourceUrl": "./skills/code-review-copy",
+      "skillPath": "skills/code-review-copy/SKILL.md",
+      "skillFolderHash": "",
+      "installedAt": "2026-10-02T21:11:55.796Z",
+      "updatedAt": "2026-10-02T21:11:55.796Z"
+    },
+    "explain-diff": {
+      "source": "./skills/explain-diff",
+      "sourceType": "local",
+      "sourceUrl": "./skills/explain-diff",
+      "skillPath": "skills/explain-diff/SKILL.md",
+      "skillFolderHash": "",
+      "installedAt": "2026-10-02T21:11:55.796Z",
+      "updatedAt": "2026-10-02T21:11:55.796Z"
+    },
+    "impeccable": {
+      "source": "./skills/impeccable",
+      "sourceType": "local",
+      "sourceUrl": "./skills/impeccable",
+      "skillPath": "skills/impeccable/SKILL.md",
+      "skillFolderHash": "",
+      "installedAt": "2026-10-02T21:11:55.796Z",
+      "updatedAt": "2026-10-02T21:11:55.796Z"
+    },
+    "refactorer": {
+      "source": "./skills/refactorer",
+      "sourceType": "local",
+      "sourceUrl": "./skills/refactorer",
+      "skillPath": "skills/refactorer/SKILL.md",
+      "skillFolderHash": "",
+      "installedAt": "2026-10-02T21:11:55.796Z",
+      "updatedAt": "2026-10-02T21:11:55.796Z"
+    },
+    "refactorer copy": {
+      "source": "./skills/refactorer copy",
+      "sourceType": "local",
+      "sourceUrl": "./skills/refactorer copy",
+      "skillPath": "skills/refactorer copy/SKILL.md",
+      "skillFolderHash": "",
+      "installedAt": "2026-10-02T21:11:55.796Z",
+      "updatedAt": "2026-10-02T21:11:55.796Z"
+    },
+    "strict-code-review": {
+      "source": "./skills/strict-code-review",
+      "sourceType": "local",
+      "sourceUrl": "./skills/strict-code-review",
+      "skillPath": "skills/strict-code-review/SKILL.md",
+      "skillFolderHash": "",
+      "installedAt": "2026-10-02T21:11:55.796Z",
+      "updatedAt": "2026-10-02T21:11:55.796Z"
+    },
+    "user-journey-mapping": {
+      "source": "./skills/user-journey-mapping",
+      "sourceType": "local",
+      "sourceUrl": "./skills/user-journey-mapping",
+      "skillPath": "skills/user-journey-mapping/SKILL.md",
+      "skillFolderHash": "",
+      "installedAt": "2026-10-02T21:11:55.796Z",
+      "updatedAt": "2026-10-02T21:11:55.796Z"
+    },
+    "ponytail": {
+      "source": "dietrichgebert/ponytail",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/dietrichgebert/ponytail.git",
+      "skillPath": "skills/ponytail/SKILL.md",
+      "skillFolderHash": "cb6e53477eaf04e6daeca22feacb85f9ce20d40c",
+      "installedAt": "2026-10-02T21:22:56.582Z",
+      "updatedAt": "2026-10-02T21:22:56.582Z"
     }
   },
   "dismissed": {

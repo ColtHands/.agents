@@ -1,0 +1,115 @@
+{
+  "version": 1,
+  "skills": {
+    "code-review": {
+      "source": "./skills",
+      "sourceType": "local",
+      "computedHash": "caa9a086baaf9e0f7cd71f64edfa83da6821c05e826b083221f3d02e3d6a1905"
+    },
+    "code-review-copy": {
+      "source": "./skills",
+      "sourceType": "local",
+      "computedHash": "502bd0e29aea4721742dc75cb91910656cfcc5b73ea35a39f09fea825156c8b8"
+    },
+    "codebase-design": {
+      "source": "./skills",
+      "sourceType": "local",
+      "computedHash": "b2888e4f4e8c0af3bfd557575a64b905c44e6248c3101d72077816882b3a92b9"
+    },
+    "explain-diff": {
+      "source": "./skills",
+      "sourceType": "local",
+      "computedHash": "99527f7bf5241038442ddb655ab1e5caabba65cd8b272c2cd988b5f8f5a36e9a"
+    },
+    "find-skills": {
+      "source": "./skills",
+      "sourceType": "local",
+      "computedHash": "913b9d37d0d54047dd65222bb8c67b2bf04e3cb87dcad1729068d7a8b2c8c396"
+    },
+    "grill-me": {
+      "source": "./skills",
+      "sourceType": "local",
+      "computedHash": "9cdbb4b8f7a3aeaef82e6230c9e823500d4a8a1214c726cf342cf9829d34fc7d"
+    },
+    "grill-with-docs": {
+      "source": "./skills",
+      "sourceType": "local",
+      "computedHash": "35e62aa423aaeab6a414bcac273f56dfb17802ef2334b41b6a3b00f28196c8cf"
+    },
+    "grilling": {
+      "source": "./skills",
+      "sourceType": "local",
+      "computedHash": "4dd886b0196bf43729d954ae326016f2bd9f5f79d892500b407c33a753362f14"
+    },
+    "handoff": {
+      "source": "./skills",
+      "sourceType": "local",
+      "computedHash": "20e5f4afdef502637510bc5c64d27645d3c85c88df9cb006824bbb0980166319"
+    },
+    "impeccable": {
+      "source": "./skills",
+      "sourceType": "local",
+      "computedHash": "ceb127db3ff5732ac4f0fd97eeb26bedf212acfa0a80a1143618dde0eb3f096f"
+    },
+    "landing-page-conversion-audit": {
+      "source": "./skills",
+      "sourceType": "local",
+      "computedHash": "9f7689539e9e0e7a9fabdfff306749ac4fbdae8bb156ab46b19261944c9d3bd5"
+    },
+    "legal-risk-assessment": {
+      "source": "./skills",
+      "sourceType": "local",
+      "computedHash": "fbc4dffe38a8b8d59ccee1d016654497dc1d9f2f4ceb5ca632dcb4715d22c07f"
+    },
+    "ponytail": {
+      "source": "./skills",
+      "sourceType": "local",
+      "computedHash": "210fa0831f649ce9f8a305f7b7c8cf2a0dd09ac4dd53067109941b96e7811d4e"
+    },
+    "refactorer": {
+      "source": "./skills",
+      "sourceType": "local",
+      "computedHash": "0f25d872196074ba8091d42d25758cd7b63b6498594c44e3769b1175929cd6be"
+    },
+    "refactorer-copy": {
+      "source": "./skills",
+      "sourceType": "local",
+      "computedHash": "131f0a421768461fb15d945eeefb240869bc58869fb32a542e580787face93ef"
+    },
+    "retro": {
+      "source": "./skills",
+      "sourceType": "local",
+      "computedHash": "b8d55851a2909e26c2dbb2e8563719c87b3b700559f604e4df344f8c27e21047"
+    },
+    "security-audit": {
+      "source": "./skills",
+      "sourceType": "local",
+      "computedHash": "98b97aad2873b3b9a8e064007c25e7827b493ba27fda8bfbdb41dab586767973"
+    },
+    "seo-audit": {
+      "source": "./skills",
+      "sourceType": "local",
+      "computedHash": "8e2ca1e7267fab10969f83a4ae6dbc15ce4082f35d8bc7fcd004b7af41ee9e4d"
+    },
+    "strict-code-review": {
+      "source": "./skills",
+      "sourceType": "local",
+      "computedHash": "cc1f3e7e2a8119b8834faf121e14df5a5ebda208aa446e7071bb6d092e8cb480"
+    },
+    "user-journey-mapping": {
+      "source": "./skills",
+      "sourceType": "local",
+      "computedHash": "c0aa4ab203807317e4b76e277157310338766e517d479f859a0716ef916cb398"
+    },
+    "wayfinder": {
+      "source": "./skills",
+      "sourceType": "local",
+      "computedHash": "fa790eb4255b13d24d7e33ff4891ccd3d621558cc0ab87ae226777538ea16a8f"
+    },
+    "web-quality-audit": {
+      "source": "./skills",
+      "sourceType": "local",
+      "computedHash": "9be796fc70ff05cf9842327d234b019376dc1abad8d7e3c4e3ea2dab8d8d3deb"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "ponytail PreToolUse 1",
+      "trigger": "PreToolUse",
+      "action": {
+        "type": "command",
+        "command": "node PONYTAIL_DIR/hooks/ponytail-subagent.js"
+      },
+      "matcher": "task|Task"
+    }
+  ]
+}

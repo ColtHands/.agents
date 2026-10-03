@@ -1,0 +1,20 @@
+name: .agents
+version: 1.0.0
+description: APM project for .agents
+author: Aleksei
+# Which agent platforms to deploy to.
+# Resolution order: --target flag > this field > auto-detect from filesystem.
+# Accepted values: agent-skills, antigravity, claude, codex, copilot, cursor, gemini, grok-build, hermes, kiro, opencode, vscode, windsurf
+targets:
+  - claude
+  - codex
+  - copilot
+  - cursor
+  - gemini
+  - opencode
+dependencies:
+  apm:
+    - dietrichgebert/ponytail#v4.10.1
+  mcp: []
+includes: auto
+scripts: {}
