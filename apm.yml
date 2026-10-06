@@ -25,6 +25,12 @@ dependencies:
     - dietrichgebert/ponytail#c6ce46179874ea7368da0eb9e67c1ad5c10f08bc
     - pbakaus/impeccable#e103efe779e2dd01274dabae83531fef00bf2563
     - humanlayer/skills
+  mcp:
+    - name: sem
+      registry: false
+      transport: stdio
+      command: sem
+      args: ["mcp"]
 license: MIT
 includes: auto
 devDependencies:
