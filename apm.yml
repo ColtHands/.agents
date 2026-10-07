@@ -2,11 +2,30 @@ name: vibe-lib
 version: 1.0.0
 description: Personal skills, plugins, and agent dependencies
 author: Aleksei
+license: MIT
+includes: auto
 targets:
   - claude
   - codex
   - copilot
+scripts:
+  # Because apm is a bit bad, .git is also included in the install, yikes
+  install-global: rsync -a --delete --exclude .git --exclude apm_modules ./ ~/.cache/vibe-lib-apm/ && apm install --global ~/.cache/vibe-lib-apm --target codex,claude,copilot --force
+devDependencies:
+  apm:
+    - ./skills/code-review-copy
+    - ./skills/refactorer
+    - ./skills/refactorer-copy
+    - ./skills/strict-code-review
+    - ./vendor/skills/explain-diff
+    - ./vendor/skills/user-journey-mapping
 dependencies:
+  mcp:
+    - name: sem
+      registry: false
+      transport: stdio
+      command: sem
+      args: ["mcp"]
   apm:
     - vercel-labs/skills/skills/find-skills#18f96ea131dab3b0fcc9b27cf7c6f6cbb6174680
     - addyosmani/web-quality-skills/skills/web-quality-audit#afa8da942115f2961fdbfa80807ea0b232ff6c00
@@ -179,22 +198,3 @@ dependencies:
     - deanpeters/Product-Manager-Skills/skills/voice-of-customer-miner#1b5a524ebb95e9497fa3f25002d8b8ec528d4444
     - deanpeters/Product-Manager-Skills/skills/vp-cpo-readiness-advisor#1b5a524ebb95e9497fa3f25002d8b8ec528d4444
     - deanpeters/Product-Manager-Skills/skills/workshop-facilitation#1b5a524ebb95e9497fa3f25002d8b8ec528d4444
-  mcp:
-    - name: sem
-      registry: false
-      transport: stdio
-      command: sem
-      args: ["mcp"]
-license: MIT
-includes: auto
-scripts:
-  # Because apm is a bit bad, .git is also included in the install, yikes
-  install-global: rsync -a --delete --exclude .git --exclude apm_modules ./ ~/.cache/vibe-lib-apm/ && apm install --global ~/.cache/vibe-lib-apm --target codex,claude,copilot --force
-devDependencies:
-  apm:
-    - ./skills/code-review-copy
-    - ./skills/refactorer
-    - ./skills/refactorer-copy
-    - ./skills/strict-code-review
-    - ./vendor/skills/explain-diff
-    - ./vendor/skills/user-journey-mapping
