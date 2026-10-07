@@ -25,6 +25,7 @@ dependencies:
     - dietrichgebert/ponytail#c6ce46179874ea7368da0eb9e67c1ad5c10f08bc
     - pbakaus/impeccable#e103efe779e2dd01274dabae83531fef00bf2563
     - humanlayer/skills
+    - ayghri/i-have-adhd#723af7d9afaf43eb871dbcce6129e2bf80de90d5
   mcp:
     - name: sem
       registry: false

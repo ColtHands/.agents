@@ -1,5 +1,5 @@
 lockfile_version: '1'
-apm_version: 0.32.0
+apm_version: 0.33.0
 dependencies:
 - repo_url: _local/code-review-copy
   name: code-review-copy
@@ -451,6 +451,32 @@ dependencies:
     .agents/skills/landing-page-conversion-audit/SKILL.md: sha256:90d4d54d03729583abc4f3f871c37f1dc90ca64701cdc4eff6dd29407888fcc5
     .claude/skills/landing-page-conversion-audit/SKILL.md: sha256:90d4d54d03729583abc4f3f871c37f1dc90ca64701cdc4eff6dd29407888fcc5
   content_hash: sha256:9f7689539e9e0e7a9fabdfff306749ac4fbdae8bb156ab46b19261944c9d3bd5
+- repo_url: ayghri/i-have-adhd
+  name: i-have-adhd
+  host: github.com
+  resolved_commit: 723af7d9afaf43eb871dbcce6129e2bf80de90d5
+  resolved_ref: 723af7d9afaf43eb871dbcce6129e2bf80de90d5
+  version: 723af7d
+  package_type: skill_bundle
+  deployed_files:
+  - .agents/skills/i-have-adhd
+  - .agents/skills/i-have-adhd/SKILL.md
+  - .agents/skills/i-have-adhd/agents/gemini.toml
+  - .agents/skills/i-have-adhd/agents/openai.yaml
+  - .claude/skills/i-have-adhd
+  - .claude/skills/i-have-adhd/SKILL.md
+  - .claude/skills/i-have-adhd/agents/gemini.toml
+  - .claude/skills/i-have-adhd/agents/openai.yaml
+  - .github/hooks/i-have-adhd-hooks.json
+  deployed_file_hashes:
+    .agents/skills/i-have-adhd/SKILL.md: sha256:88955c019bbb1419ff4b49dbb1f80a867467de6233d7865af2e06a7d7b76c7d3
+    .agents/skills/i-have-adhd/agents/gemini.toml: sha256:5108a6123beb9df24846e0dd3f902c652d18522dfbc56e5762032ea383041c62
+    .agents/skills/i-have-adhd/agents/openai.yaml: sha256:2c51291283dcefdca43ca6b0c08172f225c7c26a9783ec444d6bdfa51ca96f8f
+    .claude/skills/i-have-adhd/SKILL.md: sha256:88955c019bbb1419ff4b49dbb1f80a867467de6233d7865af2e06a7d7b76c7d3
+    .claude/skills/i-have-adhd/agents/gemini.toml: sha256:5108a6123beb9df24846e0dd3f902c652d18522dfbc56e5762032ea383041c62
+    .claude/skills/i-have-adhd/agents/openai.yaml: sha256:2c51291283dcefdca43ca6b0c08172f225c7c26a9783ec444d6bdfa51ca96f8f
+    .github/hooks/i-have-adhd-hooks.json: sha256:ec32cd82993ff5b3ef3c126547429168e6c196782213e075c207f9a621257a3f
+  content_hash: sha256:230644089013b5a04ba681f23cf908d713558c631234a2a6c346886325d6c1eb
 - repo_url: cloudflare/security-audit-skill
   name: security-audit
   host: github.com
@@ -1097,6 +1123,24 @@ dependencies:
 deployments:
 - kind: project-relative
   target: claude
+  value: .claude/commands/only-get-never-post.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:bb7959052e606309f5b5a8ea9b0d0487c5c36245932d072bb24bde34b855b257
+- kind: project-relative
+  target: claude
+  value: .claude/commands/out-in-chat.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:30854079bb0d34c379a7b5c0148bea98c659cc203bd4fd6a8753ccf97da84790
+- kind: project-relative
+  target: claude
   value: .claude/hooks/ponytail/hooks/package.json
   runtime: null
   scope: project
@@ -1410,6 +1454,42 @@ deployments:
   - mattpocock/skills/skills/productivity/handoff
   active_owner: mattpocock/skills/skills/productivity/handoff
   content_hash: sha256:5c479fd562c691851690e8b18c8501045bef0943c10743d636b2fae26add1d28
+- kind: project-relative
+  target: claude
+  value: .claude/skills/i-have-adhd
+  runtime: null
+  scope: project
+  owners:
+  - ayghri/i-have-adhd
+  active_owner: ayghri/i-have-adhd
+  content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/i-have-adhd/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - ayghri/i-have-adhd
+  active_owner: ayghri/i-have-adhd
+  content_hash: sha256:88955c019bbb1419ff4b49dbb1f80a867467de6233d7865af2e06a7d7b76c7d3
+- kind: project-relative
+  target: claude
+  value: .claude/skills/i-have-adhd/agents/gemini.toml
+  runtime: null
+  scope: project
+  owners:
+  - ayghri/i-have-adhd
+  active_owner: ayghri/i-have-adhd
+  content_hash: sha256:5108a6123beb9df24846e0dd3f902c652d18522dfbc56e5762032ea383041c62
+- kind: project-relative
+  target: claude
+  value: .claude/skills/i-have-adhd/agents/openai.yaml
+  runtime: null
+  scope: project
+  owners:
+  - ayghri/i-have-adhd
+  active_owner: ayghri/i-have-adhd
+  content_hash: sha256:2c51291283dcefdca43ca6b0c08172f225c7c26a9783ec444d6bdfa51ca96f8f
 - kind: project-relative
   target: claude
   value: .claude/skills/impeccable
@@ -3311,6 +3391,42 @@ deployments:
   content_hash: sha256:5c479fd562c691851690e8b18c8501045bef0943c10743d636b2fae26add1d28
 - kind: project-relative
   target: codex
+  value: .agents/skills/i-have-adhd
+  runtime: null
+  scope: project
+  owners:
+  - ayghri/i-have-adhd
+  active_owner: ayghri/i-have-adhd
+  content_hash: null
+- kind: project-relative
+  target: codex
+  value: .agents/skills/i-have-adhd/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - ayghri/i-have-adhd
+  active_owner: ayghri/i-have-adhd
+  content_hash: sha256:88955c019bbb1419ff4b49dbb1f80a867467de6233d7865af2e06a7d7b76c7d3
+- kind: project-relative
+  target: codex
+  value: .agents/skills/i-have-adhd/agents/gemini.toml
+  runtime: null
+  scope: project
+  owners:
+  - ayghri/i-have-adhd
+  active_owner: ayghri/i-have-adhd
+  content_hash: sha256:5108a6123beb9df24846e0dd3f902c652d18522dfbc56e5762032ea383041c62
+- kind: project-relative
+  target: codex
+  value: .agents/skills/i-have-adhd/agents/openai.yaml
+  runtime: null
+  scope: project
+  owners:
+  - ayghri/i-have-adhd
+  active_owner: ayghri/i-have-adhd
+  content_hash: sha256:2c51291283dcefdca43ca6b0c08172f225c7c26a9783ec444d6bdfa51ca96f8f
+- kind: project-relative
+  target: codex
   value: .agents/skills/impeccable
   runtime: null
   scope: project
@@ -5057,6 +5173,15 @@ deployments:
   content_hash: sha256:7f6bee86702a488d29ef0dcaabf424bbe2aca345a6a642319d43a1fe0276792e
 - kind: project-relative
   target: copilot
+  value: .github/hooks/i-have-adhd-hooks.json
+  runtime: null
+  scope: project
+  owners:
+  - ayghri/i-have-adhd
+  active_owner: ayghri/i-have-adhd
+  content_hash: sha256:ec32cd82993ff5b3ef3c126547429168e6c196782213e075c207f9a621257a3f
+- kind: project-relative
+  target: copilot
   value: .github/hooks/ponytail-copilot-hooks.json
   runtime: null
   scope: project
@@ -5136,3 +5261,75 @@ deployments:
   - dietrichgebert/ponytail
   active_owner: dietrichgebert/ponytail
   content_hash: sha256:7f6bee86702a488d29ef0dcaabf424bbe2aca345a6a642319d43a1fe0276792e
+- kind: project-relative
+  target: copilot
+  value: .github/prompts/only-get-never-post.prompt.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:abaad679c80133e4b398479e9a6c80c9544a5e04390dce4684802816d2895ffa
+- kind: project-relative
+  target: copilot
+  value: .github/prompts/out-in-chat.prompt.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:2750ae26ccd7455c20cf52368505b3b4d9e83f52bd0db95ccb99d9df6792c9af
+- kind: uri
+  target: mcp
+  value: sem
+  runtime: claude
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+- kind: uri
+  target: mcp
+  value: sem
+  runtime: codex
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+- kind: uri
+  target: mcp
+  value: sem
+  runtime: copilot
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+mcp_servers:
+- sem
+mcp_configs:
+  sem:
+    name: sem
+    transport: stdio
+    args:
+    - mcp
+    registry: false
+    command: sem
+mcp_target_servers:
+  claude:
+  - sem
+  codex:
+  - sem
+  copilot:
+  - sem
+local_deployed_files:
+- .claude/commands/only-get-never-post.md
+- .claude/commands/out-in-chat.md
+- .github/prompts/only-get-never-post.prompt.md
+- .github/prompts/out-in-chat.prompt.md
+local_deployed_file_hashes:
+  .claude/commands/only-get-never-post.md: sha256:bb7959052e606309f5b5a8ea9b0d0487c5c36245932d072bb24bde34b855b257
+  .claude/commands/out-in-chat.md: sha256:30854079bb0d34c379a7b5c0148bea98c659cc203bd4fd6a8753ccf97da84790
+  .github/prompts/only-get-never-post.prompt.md: sha256:abaad679c80133e4b398479e9a6c80c9544a5e04390dce4684802816d2895ffa
+  .github/prompts/out-in-chat.prompt.md: sha256:2750ae26ccd7455c20cf52368505b3b4d9e83f52bd0db95ccb99d9df6792c9af
